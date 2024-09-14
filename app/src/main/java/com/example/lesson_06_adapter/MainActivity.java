@@ -27,16 +27,9 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
-
         ListView listView = findViewById(R.id.listView);
-//        String [] data = {"Test1","Test2","Test3","Test4","Test4","Test5"};
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,data);
-        listView.setAdapter(arrayAdapter);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, R.id.textViewItem, data);
+        listView.setAdapter(adapter);
 
 //        GridView gridView = findViewById(R.id.gridView);
 //        ImageAdapter imageAdapter = new ImageAdapter(this, images);
@@ -52,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         EditText name = findViewById(R.id.name);
         this.data.add(name.getText().toString());
         recreate();
+    }
+
+    public void nextPage(View view){
+        Intent intent = new Intent(this, GridActivity.class);
+        startActivity(intent);
     }
 
 

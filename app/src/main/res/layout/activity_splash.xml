@@ -10,9 +10,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="145dp"
+        app:srcCompat="@drawable/img_1"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="125dp"
         android:layout_centerInParent = "true"
         android:scaleType = "centerCrop"/>
 </RelativeLayout>

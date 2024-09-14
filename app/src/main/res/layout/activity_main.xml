@@ -9,11 +9,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--    <GridView-->
+<!--        <GridView-->
 <!--        android:id="@+id/gridView"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
-<!--        android:numColumns="4"/>-->
+<!--        android:numColumns="2"/>-->
 
 <!--    <Gallery-->
 <!--        android:id="@+id/gallery"-->
@@ -41,7 +41,8 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="560dp" />
+        android:layout_height="560dp"
+        />
 
     <EditText
         android:id="@+id/name"
@@ -49,6 +50,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
+        android:fontFamily="@font/playwritecu_extralight"
         android:hint="Name"
         />
 
@@ -58,6 +60,13 @@
         android:layout_height="wrap_content"
         android:onClick="clickToAdd"
         android:text="Add" />
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="nextPage"
+        android:text="Grid animation page"/>
 
 
 </LinearLayout>

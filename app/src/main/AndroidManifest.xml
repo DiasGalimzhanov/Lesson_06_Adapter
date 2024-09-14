@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Lesson_06_Adapter"
         tools:targetApi="31">
         <activity
+            android:name=".FragmentAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShopActivity"
             android:exported="false" />
         <activity
